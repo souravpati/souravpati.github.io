@@ -231,13 +231,16 @@
             height: 220px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--color-accent-light), var(--color-border));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            font-weight: 700;
-            color: var(--color-accent);
             flex-shrink: 0;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid var(--color-surface);
+        }
+
+        .hero-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Sections */
@@ -743,7 +746,6 @@
                 margin: 0 auto;
                 width: 160px;
                 height: 160px;
-                font-size: 3.5rem;
                 order: -1;
             }
 
@@ -828,7 +830,9 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-avatar" aria-hidden="true">SP</div>
+            <div class="hero-avatar">
+                <img src="assets/images/profile.jpg" alt="Sourav Pati" width="220" height="220">
+            </div>
         </div>
     </header>
 
